@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>oddishOrEvenish</title>
+    </head>
+    <div class="container">
+     <label>Number : </label>
+    <input type="number" id="number">
+
+    <button id="button">Result</button>
+
+    <div id="result"></div>
+    
+    </div>
+           
+    <script>
+        var number=document.querySelector("#number");
+        var result=document.querySelector("#result");
+        var resultbtn=document.querySelector("#button");
+        
+        resultbtn.onclick=function(){
+            var index = 0,sum=0;
+            var num=Number(sayi.value);
+            console.log(num);
+            while(num != 0)
+            {
+               sum=(num%10)+sum;
+               num =Math.floor(num / 10);
+                ++index;
+            }
+            
+            if(sum%2 == 0)
+                document.getElementById("sonuc").innerHTML = " Even.";
+            else
+            document.getElementById("sonuc").innerHTML = " Odd.";
+        } 
+      
+    </script>
+        
+    </body>
+</html>
